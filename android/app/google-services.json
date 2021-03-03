@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "295770717067",
+    "project_id": "loginsocial-85c46",
+    "storage_bucket": "loginsocial-85c46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295770717067:android:e2e487309637e487038d8e",
+        "android_client_info": {
+          "package_name": "com.shoppingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295770717067-ad7ooqmje8soe1h1ku2ev8d0tlveo9cb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnMI55Od7aJKbyZe4DCzLXsAqIYHJPGmg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295770717067-ad7ooqmje8soe1h1ku2ev8d0tlveo9cb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

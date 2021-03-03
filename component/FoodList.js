@@ -9,10 +9,10 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 function Item({ item, index, onPress }) {
     return (
         <TouchableOpacity onPress={onPress} style={{ ...styles.tableRow, backgroundColor: { index } % 2 == 1 ? "#F0FBFC" : "white" }}>
-            <Text style={styles.columnRowTxt}>{item.STT}</Text>
-            <Text style={styles.columnRowTxt}>{item.Type}</Text>
+            <Text style={{...styles.columnRowTxt} }>{item.STT}</Text>
             <Text style={{ ...styles.columnRowTxt, fontWeight: "bold" }}>{item.Name}</Text>
-            <Text style={styles.columnRowTxt}>{item.Calo}</Text>
+            <Text style={{...styles.columnRowTxt}}>{item.Type}</Text>
+            <Text style={{...styles.columnRowTxt}}>{item.Calo}</Text>
         </TouchableOpacity>
     );
 }
@@ -21,8 +21,8 @@ export default FoodList = ({ navigation }) => {
 
     const [columns, setColumns] = useState([
         "STT",
-        "Phân loại",
         "Tên",
+        "Phân loại",
         "Calo",
     ])
     const [direction, setDirection] = useState(null)
@@ -103,7 +103,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
-        paddingTop: 80
     },
     tableHeader: {
         flexDirection: "row",
@@ -116,11 +115,11 @@ const styles = StyleSheet.create({
     },
     tableRow: {
         flexDirection: "row",
-        height: 40,
+        height: 80,
         alignItems: "center",
     },
     columnHeader: {
-        width: "20%",
+        width: "25%",
         justifyContent: "center",
         alignItems: "center"
     },
@@ -131,7 +130,10 @@ const styles = StyleSheet.create({
     columnRowTxt: {
         width: "25%",
         textAlign: "center",
-        height: "10% ",
+        justifyContent: "center",
+        alignItems: "center"
+        // paddingLeft: 5,
+        // paddingRight: 5
     }
 });
 
