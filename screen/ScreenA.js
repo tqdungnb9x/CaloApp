@@ -3,6 +3,11 @@ import { View, StyleSheet, Button, Text, Alert, SafeAreaView } from 'react-nativ
 import { ScrollView, TextInput } from 'react-native-gesture-handler';
 import { Picker } from '@react-native-community/picker';
 
+import {
+    GoogleSignin, GoogleSigninButton,
+    statusCodes
+} from '@react-native-google-signin/google-signin'
+
 import t from 'tcomb-form-native';
 
 const KILO_TO_CALO = 7716.17918;
@@ -173,7 +178,7 @@ export default function App(props) {
             } else {
                 alertCustom(title = "Cơ thể bạn cần tiêu thụ ít nhất 1200 calo mỗi ngày", msg = "Bạn hãy điều chỉnh lại kế hoạch giảm cân");
                 setShowCalo(false);
-            }        
+            }
             setShowCalo(true);
         }
     }
@@ -287,4 +292,4 @@ const styles = StyleSheet.create({
     plan: {
         fontSize: 20,
     }
-}); 
+});
